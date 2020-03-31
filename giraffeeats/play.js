@@ -65,7 +65,7 @@ function step()
 			if (!r) 
 			{
 				if((parseInt(o1.style.left)<parseInt(o.style.left)&&!q)||(parseInt(o1.style.left)>parseInt(o.style.left)&&q)) pov();
-				(q)?o.setAttribute("src","giraffeeats\\jam.gif"):o.setAttribute("src","giraffeeats\\jam2.gif");
+				(q)?o.setAttribute("src","jam.gif"):o.setAttribute("src","jam2.gif");
 				window.setTimeout("eat()", 400);
 				
 			}
@@ -76,8 +76,8 @@ function step()
 	if (y1<y) {if(y1+30<y) y1+=30; else y1=y;}
 	else {if(y1-30>y) y1-=30; else y1=y;}
 	o=document.getElementById("p");
-	if (s) {o.setAttribute("src","giraffeeats\\go.gif"); s=0;}
-	else {o.setAttribute("src","giraffeeats\\go1.gif"); s=1;}
+	if (s) {o.setAttribute("src","go.gif"); s=0;}
+	else {o.setAttribute("src","go1.gif"); s=1;}
 	o.style.left=x1+'px';
 	o.style.top=y1+'px';
 	window.setTimeout("step()", 200);	
@@ -92,7 +92,7 @@ function step1()
 			if (!r) 
 			{	
 				if((parseInt(o1.style.left)<parseInt(o.style.left)&&!q)||(parseInt(o1.style.left)>parseInt(o.style.left)&&q)) pov();
-				(q)?o.setAttribute("src","giraffeeats\\jam.gif"):o.setAttribute("src","giraffeeats\\jam2.gif");
+				(q)?o.setAttribute("src","jam.gif"):o.setAttribute("src","jam2.gif");
 				window.setTimeout("eat()", 400);
 				
 			}
@@ -102,8 +102,8 @@ function step1()
 	if(x1-30>x) x1-=30; else x1=x;
 	if (y1<y) {if(y1+30<y) y1+=30; else y1=y;}
 	else {if(y1-30>y) y1-=30; else y1=y;}
-	if (s) {o.setAttribute("src","giraffeeats\\goc.gif"); s=0;}
-	else {o.setAttribute("src","giraffeeats\\goc1.gif"); s=1;}
+	if (s) {o.setAttribute("src","goc.gif"); s=0;}
+	else {o.setAttribute("src","goc1.gif"); s=1;}
 	o.style.left=x1+'px';
 	o.style.top=y1+'px';
 	window.setTimeout("step1()", 200);	
@@ -112,7 +112,7 @@ function step1()
 function eat() {
 	//alert(a);
 	o1.style.visibility='hidden';
-	(q)?o.setAttribute("src","giraffeeats\\fat.gif"):o.setAttribute("src","giraffeeats\\fat2.gif");
+	(q)?o.setAttribute("src","fat.gif"):o.setAttribute("src","fat2.gif");
 	g=0;
 	r=1;
 	t=document.getElementById("te");
@@ -130,11 +130,11 @@ function pov() {
 	//alert('p'+q);
 	o=document.getElementById("p");
 	if (q) {
-		o.setAttribute("src","giraffeeats\\go.gif");
+		o.setAttribute("src","go.gif");
 		q=0;
 	}
 	else {
-		o.setAttribute("src","giraffeeats\\goc.gif");
+		o.setAttribute("src","goc.gif");
 		q=1;
 	}
 }
