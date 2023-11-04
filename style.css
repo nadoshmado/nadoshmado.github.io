@@ -14,6 +14,8 @@ BODY { background-color: white;
 
 A{color: black;}
 
+A.note {text-decoration: none; color:#154c79;}
+
 .dot {padding:3px; background-color: rgb(255,255,220); position: absolute; display:none; font-size:x-small }
 
 DIV.ya {position:absolute; left:2%; top:3%; width: 75%;}
