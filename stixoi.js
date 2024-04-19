@@ -9,9 +9,7 @@ var ready=0;
 
 function show(x) 
 {
-	console.log(ready);
 if(ready){
-	console.log(!arr[x]);
 	if(!arr[x]) 
 	{
 		arr[x]=1;
