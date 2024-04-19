@@ -1,5 +1,5 @@
 arr=new Array;
-var kol=67;
+var kol=83;
 for (i=0;i<kol;++i) arr[i]=0;
 d=new Array;
 
@@ -9,7 +9,9 @@ var ready=0;
 
 function show(x) 
 {
+	console.log(ready);
 if(ready){
+	console.log(!arr[x]);
 	if(!arr[x]) 
 	{
 		arr[x]=1;
